@@ -31,13 +31,12 @@ with st.sidebar:
     lista_paradas.append(origen)
     #Opcion de elegir distintas paradas
     n_paradas = st.number_input("Número de paradas a efectuar", step=1, min_value=0)
-    
     if n_paradas != 0:
         for i in range(1, n_paradas+1):
-            parada = st.text_input(f"Parada {i}:", key = f"{i}")
+            parada = st.text_input(f"Parada {i}:", key = f"{i+10}")
             lista_paradas.append(parada)
-        
-    
+                 
+                    
     ################################
 
     col1, col2= st.columns(2)
@@ -76,7 +75,7 @@ with st.sidebar:
 
     ################################################################
 
-lista_coords = pd.read_csv("coords.csv", header = None)
+lista_coords = pd.read_csv("electricTSP/coords.csv", header = None)
 lista_coords = lista_coords.iloc[:,0:3]
 
 if origen != "Eje: Gran Vía":
