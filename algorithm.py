@@ -12,7 +12,7 @@ def electric_tsp(stops):
     f = open('madrid_elevation_energy.pckl', 'rb')
     G = pickle.load(f)
     f.close()
-    grafo_tsp = nx.Graph()
+    grafo_tsp = nx.DiGraph()
     date_today = datetime.now()
     grafo_tsp.add_nodes_from(stops)
     weekday = date_today.strftime("%A")
