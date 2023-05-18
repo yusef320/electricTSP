@@ -7,7 +7,9 @@ from twoOptNearestNeigbors import RouteFinder
 from datetime import datetime
 
 def electric_tsp(stops):
-    G = nx.read_gpickle("Madrid_elevation_energy.gpickle")
+    f = open('madrid_elevation_energy.pckl', 'rb')
+    G = pickle.load(f)
+    f.close()
     grafo_tsp = nx.Graph()
     date_today = datetime.now()
     grafo_tsp.add_nodes_from(stops)
