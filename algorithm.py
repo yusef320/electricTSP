@@ -5,6 +5,8 @@ from nn_model_predictor import neural_network_energy_estimation
 from bellmanFord import bellman_ford_path
 from twoOptNearestNeigbors import RouteFinder
 from datetime import datetime
+import pickle 
+
 
 def electric_tsp(stops):
     f = open('madrid_elevation_energy.pckl', 'rb')
