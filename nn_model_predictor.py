@@ -8,7 +8,7 @@ model= load_model('energy_estimation_full.h5', compile=False)
 with open('scaler_full.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-def neural_network_energy_estimation(a, b, workingday,hour, weekday, G, model, scaler):
+def neural_network_energy_estimation(a, b, workingday,hour, weekday, G, model=model, scaler=scaler):
     input_var = ['org_lon', 'org_lat', 'org_alt', 'dest_lon', 'dest_lat', 'dest_alt',"Working_day",
            'Hour_0', 'Hour_1', 'Hour_2', 'Hour_3', 'Hour_4', 'Hour_5', 'Hour_6',
            'Hour_7', 'Hour_8', 'Hour_9', 'Hour_10', 'Hour_11', 'Hour_12',
