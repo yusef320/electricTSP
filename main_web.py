@@ -36,7 +36,7 @@ with st.sidebar:
     st.title("SmartRoute")
     lista_paradas = []
     ciudad = "Madrid"
-    origen = st.text_input("Origen", "Eje: Gran Vía")
+    origen = st.text_input("Origen", "Ejemplo: Gran Vía")
     lista_paradas.append(origen)
     #Opcion de elegir distintas paradas
     n_paradas = st.number_input("Número de paradas a efectuar", step=1, min_value=0)
