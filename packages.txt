@@ -1,8 +1,0 @@
-pandas 
-tensorflow 
-keras 
-plotly 
-geopy
-networkx
-numpy
-itertools
