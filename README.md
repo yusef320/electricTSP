@@ -24,9 +24,7 @@ The libraries needed to execute the app are in <code>requirements.txt</code>.
 
 The <code>requirements.txt</code> contains the specific versions of the libraries that allow the streamlit app to run the code without any compatibility problems. (May 2023)
 
-The coords.csv is our own data base of the id and number coordinates of the different nodes, these are specific for the city of Madrid. It has been obtained by the elev_Madrid.json, which was used to modelize the city. In case we want to represent another city, the data format would have to present the same format. The explanation to obtain this json is specified above.
-
-The algorithm.py is the algorithm created in this project, used to calculate the optimized route.
+The <code>coords.csv</code> is our own data base of the id and number coordinates of the different nodes, these are specific for the city of Madrid. It has been obtained by the elev_Madrid.json, which was used to modelize the city. In case we want to represent another city, the data format would have to present the same format. The explanation to obtain this json is specified above.
 
 ### How it works:
 Firstly, we need to obtain the number coordinate of the streets the user has entered. We have used the geocode API in this step.
