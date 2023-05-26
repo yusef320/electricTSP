@@ -16,13 +16,13 @@ This web page allows the user to specify a starting point and then to add severa
 
 URL: https://smartrouteselection.streamlit.app
 
-The main file is the main_web.py, which allows the web page to run.
+The main file is the <code> main_web.py </code>, which allows the web page to run.
 
-The files needed to run this .py are: requirements.txt, coords.csv, algorithm.py and elev_Madrid.json.
+The files needed to run this .py are: <code>coords.csv</code>, <code>algorithm.py</code> and <code>elev_Madrid.json</code>.
 
-The libraries are: streamlit, csv, plotly, pandas and geopy.geocoders.
+The libraries needed to execute the app are in <code>requirements.txt</code>.
 
-The requirements.txt contains the specific versions of the libraries that allow the streamlit app to run the code without any compatibility problems. (May 2023)
+The <code>requirements.txt</code> contains the specific versions of the libraries that allow the streamlit app to run the code without any compatibility problems. (May 2023)
 
 The coords.csv is our own data base of the id and number coordinates of the different nodes, these are specific for the city of Madrid. It has been obtained by the elev_Madrid.json, which was used to modelize the city. In case we want to represent another city, the data format would have to present the same format. The explanation to obtain this json is specified above.
 
