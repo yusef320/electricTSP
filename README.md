@@ -22,6 +22,7 @@ Firstly, we need to obtain the number coordinate of the streets the user has ent
 Next, we obtained the nearest node in our data base, corresponding to the streets the user has entered and we make a list and a dictionary:
  - The list contains the id of de nodes
  - The dictionary has as keys "lat" and "lon" and the coordinates are added in the order the user has entered.
+
 Then, the list is used in the algorithm, since the algorithm is built in order to recieve the id of the nodes and returns a list with the id of the nodes conforming the route and their coordinates.
 Finally, with plotly we make the map graphic and we add the traces and specific points. One trace for the outgoing trip and other for the return trip, plus the points refering to the starting point and the stops.
 
