@@ -4,7 +4,7 @@ This is the repository of the paper ELECTRIC VEHICLE TSP OPTIMIZATION IN URBAN L
 Authors: Yusef Ahsini, Pablo Díaz-Masa, Belén Inglés, Ana Rubio, Alba Martinez, Aina Magraner and Alberto Conejero.
 
 # Web page
-This web pages allows the user to specify a starting point and then to add several stops. This returns the optimized route.
+This web page allows the user to specify a starting point and then to add several stops. This returns the optimized route.
 
 URL: https://smartrouteselection.streamlit.app
 
