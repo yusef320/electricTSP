@@ -17,8 +17,8 @@ Authors: Yusef Ahsini, Pablo Díaz-Masa, Belén Inglés, Ana Rubio, Alba Martine
 
 - <code> Madrid{5,10,15}.pkl</code> are the test instances for the city of Madrid. Correspond to python list of list. Each list are a set of stops to visit in the city graph of Madrid (<code>madrid_elevation_energy.pckl</code>)   
 - <code>energy_estimation_full.h5</code> is a Keras model trained using <code>nn_model_predictor.py</code> to estimate the energy.
-- <code>scaler_full.pkl</code> is the scaler need to use the <code>energy_estimation_full.h5</code> model.
-- <code> simu{5,10,15}.pkl</code> are the test instances for the city of Madrid. Correspond to python list of list. Each list are a set of stops to visit in the city graph of Madrid (<code>madrid_elevation_energy.pckl</code>)   
+- <code>scaler_full.pkl</code> is the scaler needed to use the <code>energy_estimation_full.h5</code> model.
+- <code> simulation{October, November}.pkl</code> are the routes generated for each month using <code>simulation.py</code>.
 - <code>snapshots_2022.zip</code> are the traffic data for the months of October and November 2022
 
 
