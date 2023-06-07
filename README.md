@@ -1,5 +1,5 @@
 # electricTSP
-This is the repository of the paper ELECTRIC VEHICLE TSP OPTIMIZATION IN URBAN LOGISTICS: A TOPOGRAPHY AND TRAFFIC-AWARE APPROACH.
+This is the repository of the paper COMBINING SIMULATION AND NEURAL NETWORKS TO OPTIMIZE THE TSP WITH ELECTRIC VEHICLES IN CONTEXT-AWARE URBAN LOGISTICS.
 
 Authors: Yusef Ahsini, Pablo Díaz-Masa, Belén Inglés, Ana Rubio, Alba Martinez, Aina Magraner and Alberto Conejero.
 
