@@ -1,5 +1,5 @@
 # electricTSP
-This is the repository of the paper COMBINING SIMULATION AND NEURAL NETWORKS TO OPTIMIZE THE TSP WITH ELECTRIC VEHICLES IN CONTEXT-AWARE URBAN LOGISTICS.
+This is the repository of the paper Combining Simulation and Neural Networks to Optimize the TSP with Electric Vehicles in Context-Aware Urban Logistics.
 
 Authors: Yusef Ahsini, Pablo Díaz-Masa, Belén Inglés, Ana Rubio, Alba Martinez, Aina Magraner and Alberto Conejero.
 
