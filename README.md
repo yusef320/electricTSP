@@ -1,5 +1,5 @@
 # electricTSP
-This is the repository of the paper Combining Simulation and Neural Networks to Optimize the TSP with Electric Vehicles in Context-Aware Urban Logistics.
+This is the repository of the paper The Electric Vehicle Travelling Salesman Problem on Digital Elevation Models for Traffic-Aware Urban Logistics.
 
 Authors: Yusef Ahsini, Pablo Díaz-Masa, Belén Inglés, Ana Rubio, Alba Martinez, Aina Magraner and Alberto Conejero.
 
