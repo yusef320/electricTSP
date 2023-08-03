@@ -2,60 +2,20 @@ import networkx as nx
 import heapq
 
 def bellman_ford_dist(graph, source, target):
-    # Initialize distances and predecessors
-    dist = {node: float('inf') for node in graph.nodes()}
-    dist[source] = 0
-    pred = {node: None for node in graph.nodes()}
-    heap = [(0, source)]
-
-    # Relax edges repeatedly
-    visited = set()
-    while heap:
-        (d, u) = heapq.heappop(heap)
-        if u == target:
-            break
-        if u in visited:
-            continue
-        visited.add(u)
-        for v, e in graph[u].items():
-            cost = dist[u] + e['energy']
-            if dist[v] > cost:
-                dist[v] = cost
-                pred[v] = u
-                heapq.heappush(heap, (dist[v], v))
-
-    return dist[target]
+    """
+    Returns the minimum energy consumption between two nodes
+    in the city graph
+    """
+    return nx.bellman_ford_path_length(G, graph, target, weight='energy')
 
 
-def bellman_ford_path(graph, source, target, distancia="energy"):
-    # Initialize distances and predecessors
-    dist = {node: float('inf') for node in graph.nodes()}
-    dist[source] = 0
-    pred = {node: None for node in graph.nodes()}
-    heap = [(0, source)]
-
-    # Relax edges repeatedly
-    visited = set()
-    while heap:
-        (d, u) = heapq.heappop(heap)
-        if u == target:
-            break
-        if u in visited:
-            continue
-        visited.add(u)
-        for v, e in graph[u].items():
-            cost = dist[u] + e[distancia]
-            if dist[v] > cost:
-                dist[v] = cost
-                pred[v] = u
-                heapq.heappush(heap, (dist[v], v))
-
-    # Build the path from source to target
-    path = []
-    node = target
-    while node is not None:
-        path.append(node)
-        node = pred[node]
-    path.reverse()
-
-    return path, dist[target]
+def bellman_ford_path(graph, source, target, weight="energy"):
+    """
+    Returns the minimum energy consumption between two nodes
+    in the city graph and the path
+    """
+    path = nx.bellman_ford_path(graph, source, target)
+    energy = 0
+    for i in range(len(path) - 1):
+        energy += graph[path[i]][path[i+1]][weight]
+    return path, energy
